@@ -104,6 +104,8 @@ var willShuffle = 0; // will use this soon
 			console.log('Playing');
 			$('.play-icon').removeClass('fa-play').addClass('fa-pause');
 			song.play();
+			
+			
 			}
 			else {
 			console.log('Pausing');
@@ -437,7 +439,7 @@ $('audio').on('ended',function() {
   $.vegas({
     src:'img/b11.jpg'
   })('overlay', {
-    src:'img/background.jpg'
+    src:''
   });
 });
 
@@ -474,7 +476,7 @@ backgrounds:[
     backgrounds: [{ src:'img/b11.jpg' },
 					{ src:'img/b12.jpg' },
 					{ src:'img/b13.jpg' }],
-    preload:     true,
+    preload:     false,
     walk:        function(){}
   },
   overlay: {
